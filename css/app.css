@@ -1,3 +1,7 @@
+/***************************************
+  High Level Structure
+****************************************/
+
 #container {
   background-color: darksalmon;
   padding: 0 10px;
@@ -7,6 +11,7 @@
   background-color: #6ab47b;
   max-width: 940px;
   margin: 0 auto;
+  display: flex;
 }
 
 main {
@@ -21,12 +26,35 @@ main {
   margin: 0 auto;
 }
 
+
+/***************************************
+  Lists
+****************************************/
+
+ul {
+  list-style: none;
+}
+
+
+/***************************************
+  Links
+****************************************/
+
 a {
   text-decoration: none;
 }
 
-ul {
-  list-style: none;
+nav a,
+nav a:visited {
+  color: #fff;
+}
+
+nav a.selected {
+  color: darkseagreen;
+}
+
+nav a:hover {
+  color: darkblue;
 }
 
 
@@ -35,22 +63,56 @@ ul {
 ****************************************/
 
 #container > header > a {
+  flex: 1 1 auto;
+  min-width: 200px;
   margin: 10px;
-  display: block;
+  color: #fff;
   background-color: aquamarine;
+  text-align: center;
+}
+
+#container > header h1 {
+  font-family: sans-serif;
+  margin: 15px 0;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+#container > header h2 {
+  font-size: 14px;
+  font-weight: normal;
+  margin: -10px 0 10px 0;
 }
 
 #container > header > nav {
+  flex: 3 3 auto;
   margin: 10px;
   background-color: aqua;
+  display: flex;
+  flex-direction: column;
 }
 
-nav a,
-nav a:visited {
-  color: #fff;
+#container > header ul {
+  flex: 1 1 auto;
+  padding: 0;
+  margin: 0;
+  background-color: bisque;
+  display: flex;
 }
 
-nav a.selected,
-nav a:hover {
-  color: crimson;
+#container > header li {
+  flex: 1 1 auto;
+  text-align: center;
+  background-color: brown;
+  /* --- */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#container > header li a {
+  background-color: cornflowerblue;
+  font-size: 20px;
+  font-weight: bolder;
 }
