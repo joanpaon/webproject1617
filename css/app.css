@@ -1,212 +1,222 @@
-/***************************************
+  /***************************************
   High Level Structure
 ****************************************/
-
-html {
-  font-family: 'Open Sans', sans-serif;
-  background-image: url("../img/congruent_pentagon.png");
-}
-
-#container {
-  /*  background-color: darksalmon;*/
-}
-
-#container > header {
-  background-color: #6ab47b;
-  max-width: 940px;
-  height: 100px;
-  margin: 0 auto;
-  /* Flex Container */
-  display: flex;
-}
-
-main {
-  max-width: 940px;
-  margin: 0 auto;
-  /* Tracking color */
-  background-color: darkseagreen;
-}
-
-#container > footer {
-  background-color: darkolivegreen;
-  max-width: 940px;
-  margin: 0 auto;
-}
-
-
-/***************************************
-  Lists
-****************************************/
-
-ul {
-  list-style: none;
-  /* Fix weird top/bottom extra margin */
-  margin: 0;
-  padding: 0;
-}
-
-a > p {
-  /* Fix weird top/bottom extra margin */
-  margin: 0;
-  padding: 0;
-}
-
-
-/***************************************
-  Links
-****************************************/
-
-a {
-  text-decoration: none;
-}
-
-nav a,
-nav a:visited {
-  color: #fff;
-}
-
-nav a.selected {
-  color: dimgrey;
-}
-
-nav a:hover {
-  color: darkviolet;
-  /* Tracking color */
-  /*  background-color: forestgreen;*/
-}
-
-
-/***************************************
+  
+  html {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("../img/congruent_pentagon.png");
+  }
+  
+  #container {
+    /* Tracking color */
+    /*  background-color: darksalmon;*/
+  }
+  
+  #container > header {
+    max-width: 940px;
+    height: 100px;
+    margin: 0 auto;
+    /* Tracking color */
+    background-color: #6ab47b;
+    /* Flex Container */
+    display: flex;
+  }
+  
+  main {
+    max-width: 940px;
+    margin: 0 auto;
+    /* Tracking color */
+    background-color: darkseagreen;
+  }
+  
+  #container > footer {
+    max-width: 940px;
+    margin: 0 auto;
+    /* Tracking color */
+    background-color: darkolivegreen;
+  }
+  /***************************************
   #container > header 
 ****************************************/
-
-#container > header > a {
-  color: #fff;
-  text-align: center;
-  /* Tracking color */
-  background-color: forestgreen;
-  /* Flex element */
-  flex: 1 1 auto;
-  min-width: 150px;
-}
-
-#container > header h1 {
-  font-size: 24px;
-  font-weight: normal;
-  margin-top: 30px;
-}
-
-#container > header h2 {
-  font-size: 14px;
-  font-weight: normal;
-  margin-top: -15px;
-}
-
-#container > header > nav {
-  /* Tracking color */
-  /*  background-color: aqua;*/
-  /* Flex element */
-  flex: 4 4 auto;
-  /* Flex Container */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-
-#container > header ul {
-  padding: 0;
-  /* Tracking color */
-  /*  background-color: bisque;*/
-  /* Flex element */
-  flex: 1 1 auto;
-  /* Flex Container */
-  display: flex;
-}
-
-#container > header li {
-  text-align: center;
-  /* Tracking color */
-  /*  background-color: brown;*/
-  /* Flex element */
-  flex: 1 1 auto;
-  /* Flex Container */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-
-#container > header li a {
-  font-size: 20px;
-  font-weight: normal;
-  /* Tracking color */
-  /*  background-color: cornflowerblue;*/
-}
-
-
-/***************************************
+  
+  #container > header > a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    /* Tracking color */
+    background-color: forestgreen;
+    /* Flex element */
+    flex: 1 1 auto;
+    min-width: 250px;
+    /* Flex Container - Vertical align - Middle */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  #container > header > a:visited {
+    color: #fff;
+  }
+  
+  #container > header > a:hover {
+    color: darkviolet;
+  }
+  
+  #container > header > a > h1 {
+    font-size: 36px;
+    font-weight: normal;
+  }
+  
+  #container > header > a > h2 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: -25px;
+  }
+  /* --- */
+  
+  #container > header > nav {
+    /* Tracking color */
+    /*  background-color: aqua;*/
+    /* Flex element */
+    flex: 4 4 auto;
+    /* Flex Container */
+    display: flex;
+  }
+  
+  #container > header > nav > a {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    /* Tracking color */
+    /*  background-color: brown;*/
+    /* Flex element */
+    flex: 1 1 auto;
+    /* Flex Container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  #container > header > nav > a:visited {
+    color: #fff;
+  }
+  
+  #container > header > nav > a.selected {
+    color: dimgrey;
+  }
+  
+  #container > header > nav > a:hover {
+    color: darkviolet;
+    /* Tracking color */
+    /*  background-color: forestgreen;*/
+  }
+  /***************************************
   main > section 
 ****************************************/
-
-main > section {}
-
-main > section > nav {
-  /* Tracking color */
-  /*  background-color: darkkhaki;*/
-}
-
-main > section > nav > ul {
-  padding: 20px 0;
-}
-
-main > section > nav > ul a {
-  /* Tracking color */
-  /*  background-color: fuchsia;*/
-  /* Flex Container */
-  display: flex;
-}
-
-main > section > nav > ul img {
-  margin: 20px 20px 20px 40px;
-  display: inline-block;
-}
-
-main > section > nav > ul div {
-  margin: 20px 40px 20px 20px;
-  width: 100%;
-  display: inline-block;
-  /* Tracking color */
-  /*  background-color: fuchsia;*/
-}
-
-main > section > nav > ul div h3 {
-  font-size: 24px;
-  font-weight: normal;
-  margin: 0;
-}
-
-
-/**************************
+  
+  main {}
+  
+  main > section {
+    /* Fixes the weird margin between header - main - footer */
+    padding: 40px;
+    /* Tracking color */
+    /*  background-color: darkorange;*/
+  }
+  /* --- */
+  
+  main > section:first-child {
+    /* Tracking color */
+    background-color: orange;
+  }
+  
+  main > section:first-child > h3 {
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0 40px 40px 40px;
+    text-align: center;
+  }
+  
+  main > section:first-child > p {
+    font-size: 20px;
+    font-weight: normal;
+  }
+  /* --- */
+  
+  main > section:last-child > nav {
+    /* Tracking color */
+    /*    background-color: darkkhaki;*/
+  }
+  
+  main > section:last-child > nav > a {
+    color: #fff;
+    text-decoration: none;
+    margin: 40px 0;
+    /* Tracking color */
+    /*  background-color: fuchsia;*/
+    /* Flex Container */
+    display: flex;
+  }
+  
+  main > section:last-child > nav > a:hover {
+    color: darkviolet;
+  }
+  
+  main > section:last-child > nav > a:first-child,
+  main > section:last-child > nav > a:last-child {
+    margin: 0;
+    /* Tracking color */
+    /*    background-color: fuchsia;*/
+  }
+  
+  main > section:last-child > nav > a > div:first-child {
+    margin: 0 20px 0 0;
+    /* Flex element */
+    flex: 1 1 auto;
+  }
+  
+  main > section:last-child > nav > a img {
+    width: 100%;
+    height: auto;
+  }
+  /* --- */
+  
+  main > section:last-child > nav > a > div:last-child {
+    margin: 0 0 0 20px;
+    max-width: 400px;
+    /* Tracking color */
+    /*  background-color: fuchsia;*/
+    /* Flex element */
+    flex: 1 1 auto;
+  }
+  
+  main > section:last-child > nav > a h4 {
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+  }
+  /**************************
 FOOTER
 ***************************/
-
-footer {
-  font-size: 14px;
-  text-align: center;
-  padding: 40px 0 20px 0;
-}
-
-footer a {
-  color: #ccc;
-}
-
-footer a:hover {
-  color: darkviolet;
-}
-
-.social-icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-}
+  
+  #container > footer {
+    font-size: 14px;
+    text-align: center;
+    padding: 40px 0 20px 0;
+  }
+  
+  #container > footer a {
+    color: #ccc;
+  }
+  
+  #container > footer a:hover {
+    color: darkviolet;
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+  }
